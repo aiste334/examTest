@@ -23,5 +23,8 @@ public class Car {
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
 
-
+    public Car(String brand, Customer customer) {
+        this.brand = brand;
+        this.customer = customer;
+    }
 }
